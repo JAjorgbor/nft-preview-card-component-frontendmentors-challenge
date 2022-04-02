@@ -1,0 +1,140 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --not-Very-dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    font-size: var(--Font-size);
+    font-family: 'Outfit', sans-serif;
+}
+
+h3 {
+    text-align: left;
+    color: var(--White);
+    font-weight: 600;
+}
+
+h3:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.card-pics {
+    position: relative;
+}
+
+.card-body {
+    width: 330px;
+    height: 60%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: var(--dark-blue);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-image {
+    border-radius: 10px;
+    width: 87%;
+    margin: 20px auto 0 auto;
+    height: 45%;
+}
+
+.image-icon {
+    position: absolute;
+    bottom: 40%;
+    left: 42%;
+    z-index: -1;
+}
+
+.blue-background {
+    position: absolute;
+    top: 29%;
+    left: 28%;
+    background-color: var(--Cyan);
+    width: 43.6%;
+    height: 46.1%;
+    opacity: 0.5;
+    border-radius: 5px;
+    z-index: -1;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+
+.card-pics:hover .blue-background {
+    z-index: 0;
+    transform: scale(2, 2);
+}
+
+.card-pics:hover .image-icon {
+    z-index: 0;
+}
+
+.card-text {
+    margin-top: 0;
+    padding: 0 20px 20px 20px;
+    color: var(--Soft-blue);
+    text-align: left;
+}
+
+hr {
+    color: var(--not-Very-dark-blue)
+}
+
+.profile-pic {
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    margin-top: 2%;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    border: 2px solid var(--White);
+    width: 30%;
+}
+
+.spans {
+    margin: 7% auto;
+}
+
+.first-span {
+    color: var(--Cyan);
+}
+
+.second-span {
+    float: right;
+}
+
+.profile-name {
+    position: absolute;
+    bottom: 25%;
+    margin-left: 15px;
+    width: 200px;
+    display: inline;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.profile-name:hover {
+    color: var(--Cyan);
+}
+
+.dark-span {
+    color: var(--Soft-blue);
+}
+
+.attribution {
+    font-size: var(--Font-size);
+}
